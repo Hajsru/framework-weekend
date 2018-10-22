@@ -19,4 +19,26 @@
 База данных - PostgreSQL.
 
 
+## Фреймворки
+
+Идеи, какие фреймворки или чисто языки программирования можно использовать для решения задачи. 
+
+Если есть желание использовать какой-то фреймворк/язык, то PR только приветсвуются
+
+### Бэкенд
+Node.JS / Express.JS
+Node.JS / Sails.JS
+
+Python / Django
+Python / Flask
+Python / Eve
+Python
+
+PHP / Laravel
+PHP
+
+### Фронтенд
+Angular 7
+React.JS
+Vue.JS
 
