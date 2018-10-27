@@ -26,19 +26,22 @@
 Если есть желание использовать какой-то фреймворк/язык, то PR только приветсвуются
 
 ### Бэкенд
-Node.JS / Express.JS
-Node.JS / Sails.JS
+#### Node.js
+* Node.js / Express.js
+* Node.js / Sails.js
+* Node.js / TypeScript / Nest.js
 
-Python / Django
-Python / Flask
-Python / Eve
-Python
+#### Python
+* Python / Django
+* Python / Flask
+* Python / Eve
+* Python / Falcon
 
-PHP / Laravel
-PHP
+#### PHP
+* PHP / Laravel
+* PHP
 
 ### Фронтенд
-Angular 7
-React.JS
-Vue.JS
-
+* Angular 7
+* React.js
+* Vue.js
