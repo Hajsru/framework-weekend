@@ -19,4 +19,9 @@ services:
       - 8081:8081
       - 8051:8051
       - 8052:8052
+  fw-squid:
+    image: minimum2scp/squid
+    ports:
+      - 3128:3128
+      - 3129:3129
 
