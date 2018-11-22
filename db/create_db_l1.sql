@@ -18,6 +18,20 @@ create table events
 alter table events owner to postgres
 ;
 
+create table speakers
+(
+	speaker_id integer not null
+		constraint speakers_pkey
+			primary key,
+	name text not null,
+	photo text,
+	description text
+)
+;
+
+alter table speakers owner to postgres
+;
+
 create table presentations
 (
 	presentation_id serial not null
@@ -33,23 +47,6 @@ create table presentations
 ;
 
 alter table presentations owner to postgres
-;
-
-create table speakers
-(
-	speaker_id integer not null
-		constraint speakers_pkey
-			primary key,
-	name text not null,
-	photo text,
-	description text,
-	presentation_id integer not null
-		constraint speakers_presentations_presentation_id_fk
-			references presentations
-)
-;
-
-alter table speakers owner to postgres
 ;
 
 create table comments
@@ -194,5 +191,21 @@ alter table speaker_comments owner to postgres
 
 create unique index speaker_comments_comment_id_uindex
 	on speaker_comments (comment_id)
+;
+
+create table presentation_speakers
+(
+	speaker_id integer not null
+		constraint presentation_speakers_speakers_speaker_id_fk
+			references speakers,
+	presentation_id integer not null
+		constraint presentation_speakers_presentations_presentation_id_fk
+			references presentations,
+	constraint presentation_speakers_pk
+		primary key (speaker_id, presentation_id)
+)
+;
+
+alter table presentation_speakers owner to postgres
 ;
 
