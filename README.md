@@ -35,7 +35,7 @@
 * PHP
 
 #### C#
- * [C# / WCF](https://github.com/Hajsru/fw-back-c-sharp)
+ * [C# / ASP.NET Core](https://github.com/Hajsru/fw-back-c-sharp)
  
 ### Фронтенд
 * [Angular 7](https://github.com/Hajsru/fw-front-angular)
