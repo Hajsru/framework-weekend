@@ -16,22 +16,31 @@
 Если есть желание использовать какой-то фреймворк/язык, то PR только приветсвуются
 
 ### Бэкенд
+
+Для всех бэкендов является единым использование одной базы данных [Описание базы данных и её дамп](db/README.md) и предоставление единого REST API [Описание схемы REST API](rest/README.md)
+
 #### Node.js
 * Node.js / Express.js
 * Node.js / Sails.js
 * Node.js / TypeScript / Nest.js
 
 #### Python
-* Python / Django
+* [Python / Django](https://github.com/Hajsru/fw-back-django)
 * Python / Flask
 * Python / Eve
 * Python / Falcon
 
 #### PHP
-* PHP / Laravel
+* [PHP / Laravel](https://github.com/Hajsru/fw-back-laravel)
 * PHP
 
+#### C#
+ * [C# / WCF](https://github.com/Hajsru/fw-back-c-sharp)
+ 
 ### Фронтенд
-* Angular 7
-* React.js
-* Vue.js
+* [Angular 7](https://github.com/Hajsru/fw-front-angular)
+* [React.js](https://github.com/Hajsru/fw-front-react)
+* [Vue.js](https://github.com/Hajsru/fw-front-vue)
+
+### Бэкендлесс
+* [Angular + Firebase](https://github.com/Hajsru/fw-backendless-angular)
