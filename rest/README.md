@@ -68,8 +68,61 @@
 }
 ```
 
+`POST /events/{id}/comments`
+Добавить комментарий к событию с `{id}`
+
+```json
+{
+  "data":[
+      {
+        "commentText": "Сумасшедший эвент!",
+      }
+    ]
+}
+```
+Ответ:
+```json
+{
+  "links": {
+      "parent": "//example.com/api/v1/events/1",
+      "self": "//example.com/api/v1/events/1/comments",
+      "next": "//example.com/api/v1/events/comments?page[offset]=2",
+      "last": "//example.com/api/v1/events/comments?page[offset]=10"
+  },
+  "data":[
+      {
+        "commentId": 1,
+        "commentText": "Сумасшедший эвент!",
+      }
+    ]
+}
+```
+
 `GET /events/{id}/rating`
 Получить рейтинг для события с `{id}`
+```json
+{
+  "links": {
+      "parent": "//example.com/api/v1/events/1",
+      "self": "//example.com/api/v1/events/1/rating",
+  "data": {
+        "rating": 4,
+      }
+}
+```
+
+`POST /events/{id}/rating`
+Добавить значение рейтинга к событию с `{id}`
+
+```json
+{
+  "data": {
+        "rating": 4,
+      }
+}
+```
+
+Ответ:
 ```json
 {
   "links": {
@@ -139,8 +192,62 @@
 }
 ```
 
+`POST /speakers/{id}/comments`
+Добавить комментарий к спикеру с `{id}`
+
+```json
+{
+  "data":[
+      {
+        "commentText": "Какой обаяшка!",
+      }
+    ]
+}
+```
+
+Ответ:
+```json
+{
+  "links": {
+      "parent": "//example.com/api/v1/speakers/1",
+      "self": "//example.com/api/v1/speakers/1/comments",
+      "next": "//example.com/api/v1/speakers/comments?page[offset]=2",
+      "last": "//example.com/api/v1/speakers/comments?page[offset]=10"
+  },
+  "data":[
+      {
+        "commentId": 1,
+        "commentText": "Какой обаяшка!",
+      }
+    ]
+}
+```
+
 `GET /speakers/{id}/rating`
 Получить рейтинг для спикера с `{id}`
+```json
+{
+  "links": {
+      "parent": "//example.com/api/v1/speakers/1",
+      "self": "//example.com/api/v1/speakers/1/rating",
+  "data": {
+        "rating": 4,
+      }
+}
+```
+
+`POST /speakers/{id}/rating`
+Добавить значение рейтинга к спикеру с `{id}`
+
+```json
+{
+  "data": {
+        "rating": 4,
+      }
+}
+```
+
+Ответ:
 ```json
 {
   "links": {
@@ -232,6 +339,37 @@
 }
 ```
 
+`POST /presentations/{id}/comments`
+Добавить комментарий к докладу с `{id}`
+
+```json
+{
+  "data":[
+      {
+        "commentText": "Вот это темищщще!",
+      }
+    ]
+}
+```
+
+Ответ:
+```json
+{
+  "links": {
+      "parent": "//example.com/api/v1/presentations/1",
+      "self": "//example.com/api/v1/presentations/1/comments",
+      "next": "//example.com/api/v1/presentations/comments?page[offset]=2",
+      "last": "//example.com/api/v1/presentations/comments?page[offset]=10"
+  },
+  "data":[
+      {
+        "commentId": 1,
+        "commentText": "Вот это темищщще!",
+      }
+    ]
+}
+```
+
 `GET /presentations/{id}/rating`
 Получить рейтинг для доклада с `{id}`
 ```json
@@ -245,8 +383,31 @@
 }
 ```
 
+`POST /presentations/{id}/rating`
+Добавить значение рейтинга к докладу с `{id}`
+
+```json
+{
+  "data": {
+        "rating": 4,
+      }
+}
+```
+
+Ответ:
+```json
+{
+  "links": {
+      "parent": "//example.com/api/v1/presentations/1",
+      "self": "//example.com/api/v1/presentations/1/rating",
+  "data": {
+        "rating": 4,
+      }
+}
+```
+
 `GET /presentations/{id}/speakers`
-Получить список докладчиков для доклада с `{id}`
+Получить список  спикеров для доклада с `{id}`
 ```json
 {
   "links": {
