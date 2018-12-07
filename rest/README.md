@@ -430,7 +430,7 @@
 {
   "links": {
       "parent": "//example.com/api/v1/events/1",
-      "self": "//example.com/api/v1/events/1/speakers",
+      "self": "//example.com/api/v1/events/1/presentations",
   "data":[
       {
         "presentationId": 1,
